@@ -13,7 +13,7 @@
   <script src="node_modules/reflect-metadata/Reflect.js"></script>
   <script src="node_modules/systemjs/dist/system.src.js"></script>
   <!-- 2. Configure SystemJS -->
-  <script src="systemjs.config.js"></script>
+  <script src="system.config.js"></script>
   <script>
     System.import('app').catch(function(err){ console.error(err); });
   </script>
@@ -23,6 +23,7 @@
 <body>
   <div class="content">
     <h1>Our First Application</h1>
+    <hello-angular></hello-angular>
   </div>
 </body>
 </html>
