@@ -3,26 +3,37 @@
   <title>The Basics Of Angular 2</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Stylesheet -->
+
   <link rel="stylesheet" type="text/css" href="resources/vendor/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <!-- 1. Load libraries -->
-  <!-- Polyfill(s) for older browsers -->
+
   <script src="node_modules/core-js/client/shim.min.js"></script>
   <script src="node_modules/zone.js/dist/zone.js"></script>
   <script src="node_modules/reflect-metadata/Reflect.js"></script>
   <script src="node_modules/systemjs/dist/system.src.js"></script>
-  <!-- 2. Configure SystemJS -->
   <script src="system.config.js"></script>
   <script>
     System.import('app').catch(function(err){ console.error(err); });
   </script>
-  
+
 </head>
-<!-- 3. Display the application -->
 <body>
-  <div class="content">
-    <h1>Our First Application</h1>
+  <!-- Menu Bar -->
+  <div class="ui menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        <img class="logo" src="resources/images/header-logo.png">
+      </a>
+      <div class="header item borderless">
+        <h1 class="ui header">
+          Школа онлайн образования
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui main text container">
+    <!-- Our app loads here! -->
   </div>
 </body>
 </html>
